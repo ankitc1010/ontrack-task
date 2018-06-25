@@ -52,3 +52,11 @@ div.hover__button__right__container span {
     color: white;
     left: 30px;
   }
+  @media (max-width: 699px) {
+    .hover__button__right__container {
+        min-width: 0;
+    }
+    .hover__button__right__container span {
+        display: none !important;
+    }
+}

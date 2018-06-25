@@ -1,33 +1,50 @@
-.hover__button__container{
+.hover__button__right__bottom__container{
     -webkit-transition: all .3s cubic-bezier(.4,0,0,1);
     transition: all .3s cubic-bezier(.4,0,0,1);
     transition: all .3s cubic-bezier(.4,0,0,1),all .3s cubic-bezier(.4,0,0,1);
     background: transparent;
     display: inline-block;
     content: normal;
+    position: fixed;
+    right: 0;
+    bottom: 0;
     /* height: 70px; */
     /* padding: 0; */
     border-radius: 35px;
     padding-top: 8px;
-    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 8px;
     align-items: center;
+    z-index: 10;
     min-width: 140px;
-    border: none;
 
 }
-.hover__button__container button {
+.hover__button__right__bottom__container button {
     width: 50px;
     height: 50px;
     border-radius: 28px;
     border: none;
 }
-div.hover__button__container span {
+.hover__button__right__bottom__container     span {
+    background: #eeeeee;
+    padding: 15px 17px;
+    color:black;
+    display: relative;
+    top: -48px;
+    margin: 0px 5px;
+    //margin: 20px;
+    -webkit-transition: all .6s cubic-bezier(.4,0,0,1);
+    transition: all .6s cubic-bezier(.4,0,0,1);
+    transition: all .6s cubic-bezier(.4,0,0,1);
+    transition: all .6s cubic-bezier(.4,0,0,1),all .6s cubic-bezier(.4,0,0,1);
+    border-radius: 50%;
+}
+div.hover__button__right__bottom__container span {
     color: transparent;
     position: relative;
-    left: -37px;
-    top: 12px;
-    font-weight: 300;
+    left: 98px;
+    background: transparent;
+    top: 1px;
     font-size: 20px;
     -webkit-transition: all .3s cubic-bezier(.4,0,0,1);
     transition: all .3s cubic-bezier(.4,0,0,1);
@@ -39,27 +56,26 @@ div.hover__button__container span {
     letter-spacing: -.01em;
     font-weight: 300;
   }
-  div.hover__button__container:hover{
+  div.hover__button__right__bottom__container:hover{
     background: #9490909c;
   }
-  div.hover__button__container button {
+  div.hover__button__right__bottom__container button {
+      float: right;
     -webkit-transition: all .3s cubic-bezier(.4,0,0,1);
     transition: all .3s cubic-bezier(.4,0,0,1);
     transition: all .3s cubic-bezier(.4,0,0,1);
     transition: all .3s cubic-bezier(.4,0,0,1),all .3s cubic-bezier(.4,0,0,1);
   }
-  div.hover__button__container:hover span {
-    color: white;
-    left: 10px;
+  div.hover__button__right__bottom__container:hover span {
+    color: black;
+    left: 0px;
+    background: white;
   }
-  div.hover__button__container:hover button {
-      transform: rotateZ(90deg)
-  }
-@media (max-width: 699px) {
-    .hover__button__container {
+  @media (max-width: 699px) {
+    .hover__button__right__bottom__container {
         min-width: 0;
     }
-    .hover__button__container span {
+    .hover__button__right__bottom__container span {
         display: none !important;
     }
 }

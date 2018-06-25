@@ -164,6 +164,7 @@ td {
     z-index: 5;
     //padding-bottom: 15.625rem;
     margin: 0 11%;  
+    position: relative;
     display:grid;
     grid-template-areas: 
         'image image image content content';
@@ -193,9 +194,11 @@ tr {
 }
 .three__boxes__grid {
     display: grid;
+    position: relative;
+    z-index: 4;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: calc(100vw / 4);
-    border: 1px solid grey;
+    overflow: hidden;
 }
 
 .first {
@@ -206,6 +209,7 @@ tr {
     overflow: hidden;
     grid-template-columns: 1;
     grid-template-rows: 1;
+    border: 1px solid #ccc;
 }
 .item__overlay {
     background: #ffc60032;
@@ -359,6 +363,12 @@ tr {
                     'image'
                     'content';
     }
+    .three__boxes__grid {
+        grid-template-rows: calc(100vw / 4);
+    }
+    .back-portion {
+        font-size: 160%;
+    }
     .layout__chair {
         display: grid;
         grid-template-areas: 
@@ -372,6 +382,34 @@ tr {
         padding: 75px 0px;
 
         overflow: scroll;
+    }
+    .css__grid .big {
+        grid-column: span 8;
+    grid-row: span 3; 
+    }
+    .big2 {
+        grid-column: span 8;
+    grid-row: span 3; 
+    }
+    .big3 {
+        grid-column: span 8;
+    grid-row: span 3; 
+    }
+    .small1 {
+        grid-column: span 8;
+    grid-row: span 3; 
+    }
+    .small2 {
+        grid-column: span 8;
+    grid-row: span 3; 
+    }
+    .small3 {
+        grid-column: span 8;
+    grid-row: span 3; 
+    }
+    .follow {
+        grid-column: 8 / -1;
+    grid-row: 1 / span 1; 
     }
     .follow {
     display: none;

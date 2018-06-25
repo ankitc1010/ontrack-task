@@ -8,6 +8,7 @@ import HeaderText from "./HeaderText"
 import HoverButton from "./HoverButton"
 import HoverButtonRight from "./HoverButtonRight"
 import BuyProductButton from "./BuyProductButton"
+import BottomSocialButton from "./BottomSocialButton"
 import chairImg from "./img/chair.jpg"
 import cool from "./img/cool.jpg"
 import h2 from "./img/h2.jpg"
@@ -30,6 +31,7 @@ class Home extends Component {
     return (
       <div>
         <SideNav />
+        <BottomSocialButton />
         <div className="top-section">
           <HeaderText />
           <div>
