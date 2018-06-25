@@ -1,0 +1,362 @@
+.header {
+	width: 100%;
+	background: #101010;
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.profile-imageNav {
+	width: 139px;
+	padding: 11px;
+	border-radius: 100px;
+}
+.menuToggle {
+	background: none;
+	border: none;
+	width: 24px;
+	height: 24px;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+}
+.sales-user-delete {
+	background: white;
+	display: flex;
+	padding: 9px;
+	margin-right: 23px;
+	justify-content: space-between;
+}
+.sideNav {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	pointer-events: none;
+	z-index: 40;
+	transition: opacity 0.5s cubic-bezier(0, 0, 0.3, 1);
+}
+
+.sideNav::before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+	opacity: 0;
+}
+
+.sideNavVisible {
+	pointer-events: auto;
+}
+.sideNavVisibleRight {
+	pointer-events: auto;
+}
+.sideNavContainer {
+	position: relative;
+	width: 95%;
+	max-width: 600px;
+	background: white;
+	height: 100%;
+	box-shadow: 2px 0 7px rgba(0, 0, 0, 0.4);
+	transform: translateX(-102%);
+	box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+	transition: transform 0.1s cubic-bezier(0, 0, 0.3, 1);
+	z-index: 2;
+	overflow-y: auto;
+}
+.grey-nav {
+	background: #fafafa !important;
+}
+.sideNavContainerRight {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	right: 0;
+	max-width: 400px;
+	height: 100%;
+	box-shadow: 2px 0 7px rgba(0, 0, 0, 0.4);
+	transform: translateX(102%);
+	display: flex;
+	background: #fff;
+	box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+	flex-direction: column;
+	overflow-y: auto;
+	transition: transform 0.1s cubic-bezier(0, 0, 0.3, 1);
+	z-index: 2;
+}
+.sideNavVisible::before {
+	opacity: 1;
+}
+
+.sideNavVisible .sideNavContainer {
+	transform: none;
+}
+.sideNavVisibleRight::before {
+	opacity: 1;
+}
+
+.sideNavVisibleRight .sideNavContainerRight {
+	transform: none;
+}
+.edit-section {
+	/* display: flex;
+	width: 100%;
+	justify-content: space-around; */
+	margin-top: 40px;
+}
+.edit-button {
+	font-size: 14px;
+	/* font-size: 9px;
+	letter-spacing: 0.12em; */
+	color: #2081f7;
+	margin-bottom: 20px;
+}
+.edit-button a:link,
+.edit-button a:visited,
+.edit-button a:hover,
+.edit-button a:active {
+	font-size: 14px;
+	color: #2081f7;
+	text-decoration: none;
+}
+.edit-button svg {
+	width: 20px;
+	height: 20px;
+	position: relative;
+	top: 3px;
+	margin-right: 5px;
+}
+.empty-user {
+	color: #999;
+	margin-bottom: 20px;
+}
+.make-right {
+	justify-content: flex-end;
+	margin-right: 38px;
+}
+.sideNavHide {
+	/* position: absolute;
+	right: 16px;
+	top: 84px; */
+	background: transparent;
+	/* color: black !important; */
+	border: none;
+}
+.profile-segment {
+	width: 100%;
+	/* text-align: center; */
+}
+.profile-pic {
+	height: 50px;
+	width: 50px;
+	border: 1px solid #ccc;
+	float: left;
+	margin-right: 10px;
+}
+
+.sideNavHeader {
+	background: #f5f1ee;
+	padding: 15px 20px;
+	display: flex;
+	color: black;
+	flex-direction: column;
+	align-items: center;
+	border-top: 1px solid #ddd;
+}
+.sideNavHeaderRight {
+	padding: 22px 16px;
+	background: #fff;
+	display: flex;
+	color: black;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.tips-logo span {
+	position: relative;
+	font-size: 178%;
+	font-weight: 100;
+	left: 16px;
+	top: -3px;
+	font-size: 24px;
+}
+.tips-cross {
+}
+.sideNavHideRight {
+	background: transparent;
+	/* color: black !important; */
+	border: none;
+}
+.sideNavHeader h3 {
+	letter-spacing: -1px;
+	font-size: 20px;
+	margin: 2px;
+	position: relative;
+	top: -14px;
+}
+.sideNavContent {
+	flex: 1;
+	margin: 0;
+	background: white;
+	text-align: left;
+	list-style: none;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding: 0;
+	-webkit-overflow-scrolling: touch;
+}
+.sideNavContent li {
+	/* height: 32px; */
+	/* line-height: 32px; */
+	padding: 15px;
+	font-size: 19px;
+	border-top: 1px solid #ccc;
+	/* margin: 1px; */
+}
+
+.sideNavContent li a {
+	text-decoration: none;
+	color: black;
+}
+
+.sideNavContent li svg {
+	width: 25px;
+	height: 25px;
+	position: relative;
+	/* top: 5px; */
+	margin-right: 15px;
+}
+
+.sideNavContent li span {
+	position: relative;
+	top: -5px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.sideNavContent li:hover {
+	background: #f2ebe5;
+	cursor: pointer;
+}
+.side-nav-email {
+	margin: 0;
+	position: relative;
+	top: 7px;
+	font-size: 93%;
+	color: grey;
+	left: 9px;
+}
+.some-top {
+	/* font-style: normal;
+	font-weight: normal;
+	line-height: normal; */
+	font-size: 18px;
+	line-height: 50px;
+	display: inline-block;
+	font-weight: bold;
+}
+.choice-segment {
+	/* font-style: normal; */
+	/* font-weight: 600; */
+	/* line-height: normal; */
+	/* font-size: 15px; */
+	display: flex;
+	text-align: center;
+	/* background: #f7f7f7; */
+	background: #e6e6e6;
+	justify-content: space-around;
+}
+.choice-segment p {
+	width: 50%;
+	padding: 15px 20px;
+	margin: 0;
+	text-align: left;
+}
+.choice-segment p.active {
+	background: #fff;
+	font-weight: bold;
+}
+.choice-segment.make-right {
+	margin: 0;
+}
+.choice-segment.make-right p.active {
+	width: 100%;
+	background: #e6e6e6;
+}
+.account-settings {
+	background: #fff;
+	padding: 20px;
+}
+.account-settings .input-signup {
+	width: 100%;
+	margin: 0;
+	text-align: left;
+}
+.account-details {
+	margin-bottom: 20px;
+}
+.account-details-key {
+	width: 40%;
+	line-height: normal;
+	font-size: 16px;
+	color: #000000;
+	font-weight: bold;
+}
+.account-details-value {
+	width: 60%;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 16px;
+	color: #000000;
+}
+.make-it-inherit {
+	height: inherit;
+}
+.one-with-logo {
+	height: 64px;
+	border-bottom: 1px solid #8c8c8c;
+	margin-bottom: 4px;
+	margin-left: 14px;
+	margin-right: 14px;
+}
+.image-logo-above-header {
+	width: 30px;
+	position: relative;
+	top: 29px;
+	left: 31px;
+}
+.signup-with-google {
+	/* padding: 16px 27px; */
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #737272;
+	border-radius: 3px;
+	background: #efefef;
+}
+.done {
+	/* background: linear-gradient(180deg, #5d59ff 0%, #c69198 100%), #c69198; */
+	background-blend-mode: normal, multiply;
+	border-radius: 2px;
+
+	color: #2081f7;
+	background: #fff;
+	margin-top: 15px;
+	border: 1px solid #2081f7;
+	border-radius: 3px;
+	margin-right: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+	.sideNavContainer {
+		width: 100%;
+		max-width: 100%;
+	}
+}

@@ -1,0 +1,54 @@
+.hover__button__right__container{
+    -webkit-transition: all .3s cubic-bezier(.4,0,0,1);
+    transition: all .3s cubic-bezier(.4,0,0,1);
+    transition: all .3s cubic-bezier(.4,0,0,1),all .3s cubic-bezier(.4,0,0,1);
+    background: transparent;
+    display: inline-block;
+    content: normal;
+    /* height: 70px; */
+    /* padding: 0; */
+    border-radius: 35px;
+    padding-top: 8px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    align-items: center;
+    min-width: 140px;
+
+}
+.hover__button__right__container button {
+    width: 50px;
+    height: 50px;
+    border-radius: 28px;
+    border: none;
+}
+div.hover__button__right__container span {
+    color: transparent;
+    position: relative;
+    left: 98px;
+    top: 12px;
+    font-weight: 300;
+    font-size: 20px;
+    -webkit-transition: all .3s cubic-bezier(.4,0,0,1);
+    transition: all .3s cubic-bezier(.4,0,0,1);
+    transition: all .3s cubic-bezier(.4,0,0,1),all .3s cubic-bezier(.4,0,0,1);
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    overflow: hidden;
+    letter-spacing: -.01em;
+    font-weight: 300;
+  }
+  div.hover__button__right__container:hover{
+    background: #9490909c;
+  }
+  div.hover__button__right__container button {
+      float: right;
+    -webkit-transition: all .3s cubic-bezier(.4,0,0,1);
+    transition: all .3s cubic-bezier(.4,0,0,1);
+    transition: all .3s cubic-bezier(.4,0,0,1);
+    transition: all .3s cubic-bezier(.4,0,0,1),all .3s cubic-bezier(.4,0,0,1);
+  }
+  div.hover__button__right__container:hover span {
+    color: white;
+    left: 30px;
+  }
